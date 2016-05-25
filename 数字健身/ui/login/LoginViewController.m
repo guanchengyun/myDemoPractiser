@@ -91,6 +91,22 @@
         return;
     }
     
+    NSInteger IsLogin = 1;
+    if (IsLogin > 0) {
+        [[NSUserDefaults standardUserDefaults]setObject:self.TextFieldUser.text forKey:UserName];
+        [[NSUserDefaults standardUserDefaults]setObject:self.TextFieldPass.text forKey:PassValue];
+        [[NSUserDefaults standardUserDefaults]setObject:nil forKey:MatChingID];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        if (self.blockEnterMain) {
+            NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:@"yes",@"isLogin", nil];
+            self.blockEnterMain(dic);
+        }
+    }else{
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"登录失败" message:@"用户名或密码错误" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        [alert show];
+    }
+    return;
+    
     MBProgressHUD *progressHUD=[MBProgressHUD showHUDAddedTo:self.view animated:YES];
     progressHUD.removeFromSuperViewOnHide=YES;
     progressHUD.labelFont=[UIFont systemFontOfSize:12];

@@ -115,7 +115,7 @@
 //    NSLog(@"buttonIndex::%d",buttonIndex);
     if (buttonIndex == 0) {
         AppDelegate *app=[UIApplication sharedApplication].delegate;
-        [app LogOut];
+        [app logOut];
     }
 }
 /*

@@ -30,9 +30,9 @@
 		75801E14196EA5080009A4C8 /* RYAssetsPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75801D0B196EA5080009A4C8 /* RYAssetsPickerController.m */; };
 		75801E15196EA5080009A4C8 /* RYAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75801D0D196EA5080009A4C8 /* RYAssetsViewController.m */; };
 		75801E16196EA5080009A4C8 /* RYVideoCompress.m in Sources */ = {isa = PBXBuildFile; fileRef = 75801D0F196EA5080009A4C8 /* RYVideoCompress.m */; };
-		75801E17196EA5080009A4C8 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 75801D12196EA5080009A4C8 /* FMDatabase.m */; };
+		75801E17196EA5080009A4C8 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 75801D12196EA5080009A4C8 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		75801E18196EA5080009A4C8 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 75801D14196EA5080009A4C8 /* FMDatabaseAdditions.m */; };
-		75801E19196EA5080009A4C8 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 75801D16196EA5080009A4C8 /* FMDatabaseQueue.m */; };
+		75801E19196EA5080009A4C8 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 75801D16196EA5080009A4C8 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		75801E1A196EA5080009A4C8 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 75801D18196EA5080009A4C8 /* FMResultSet.m */; };
 		75801E1B196EA5080009A4C8 /* JsonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75801D1B196EA5080009A4C8 /* JsonManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		75801E1C196EA5080009A4C8 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 75801D1E196EA5080009A4C8 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };

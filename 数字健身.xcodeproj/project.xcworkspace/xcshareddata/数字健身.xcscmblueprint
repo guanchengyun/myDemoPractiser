@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B787B208D05069BD13858522C74930F13EA26C80",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "d6777e25-201b-8649-add9-fbfc0fb63ddb++4906" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "d6777e25-201b-8649-add9-fbfc0fb63ddb++4906" : 0,
+    "B787B208D05069BD13858522C74930F13EA26C80" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AA9AD741-155E-41F4-80D9-51C22E4605AF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "d6777e25-201b-8649-add9-fbfc0fb63ddb++4906" : "%E6%95%B0%E5%AD%97%E5%81%A5%E8%BA%AB%202\/%E6%95%B0%E5%AD%97%E5%81%A5%E8%BA%AB\/lib\/FMDB\/",
+    "B787B208D05069BD13858522C74930F13EA26C80" : "%E6%95%B0%E5%AD%97%E5%81%A5%E8%BA%AB%202\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "数字健身",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "数字健身.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/guanchengyun\/myDemoPractiser.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B787B208D05069BD13858522C74930F13EA26C80"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/112.2.33.229:8443\/svn\/ProjectM",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "d6777e25-201b-8649-add9-fbfc0fb63ddb++4906"
+    }
+  ]
+}

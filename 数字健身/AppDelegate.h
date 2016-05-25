@@ -18,5 +18,5 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, assign) NetworkStatus WorkStatus;
 
--(void)LogOut;
+-(void)logOut;
 @end

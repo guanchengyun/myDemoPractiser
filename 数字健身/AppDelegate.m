@@ -63,11 +63,11 @@
 
 }
 
--(void)HideImageViewAction:(UIImageView *)imageview{
+-(void)hideImageViewAction:(UIImageView *)imageview{
     [imageview removeFromSuperview];
 }
 
--(void)LogOut{
+-(void)logOut{
     __unsafe_unretained AppDelegate *appDelegate=self;
     loginViewController.blockEnterMain=^(NSDictionary *info){
         [appDelegate enterMain:info];

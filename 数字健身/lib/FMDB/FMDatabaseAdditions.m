@@ -1,6 +1,6 @@
 //
 //  FMDatabaseAdditions.m
-//  fmdb
+//  fmkit
 //
 //  Created by August Mueller on 10/30/05.
 //  Copyright 2005 Flying Meat Inc.. All rights reserved.
@@ -94,7 +94,8 @@ return ret;
     return rs;
 }
 
-- (BOOL)columnExists:(NSString*)columnName inTableWithName:(NSString*)tableName {
+
+- (BOOL)columnExists:(NSString*)tableName columnName:(NSString*)columnName {
     
     BOOL returnBool = NO;
     
@@ -105,7 +106,7 @@ return ret;
     
     //check if column is present in table schema
     while ([rs next]) {
-        if ([[[rs stringForColumn:@"name"] lowercaseString] isEqualToString:columnName]) {
+        if ([[[rs stringForColumn:@"name"] lowercaseString] isEqualToString: columnName]) {
             returnBool = YES;
             break;
         }
@@ -116,61 +117,6 @@ return ret;
     
     return returnBool;
 }
-
-#if SQLITE_VERSION_NUMBER >= 3007017
-- (uint32_t)applicationID {
-    
-    uint32_t r = 0;
-    
-    FMResultSet *rs = [self executeQuery:@"pragma application_id"];
-    
-    if ([rs next]) {
-        r = (uint32_t)[rs longLongIntForColumnIndex:0];
-    }
-    
-    [rs close];
-    
-    return r;
-}
-
-- (NSString*)applicationIDString {
-    NSString *s = NSFileTypeForHFSTypeCode([self applicationID]);
-    
-    assert([s length] == 6);
-    
-    s = [s substringWithRange:NSMakeRange(1, 4)];
-    
-    
-    return s;
-    
-}
-
-- (void)setApplicationID:(uint32_t)appID {
-    NSString *query = [NSString stringWithFormat:@"PRAGMA application_id=%d", appID];
-    FMResultSet *rs = [self executeQuery:query];
-    [rs next];
-    [rs close];
-}
-
-- (void)setApplicationIDString:(NSString*)s {
-    
-    if ([s length] != 4) {
-        NSLog(@"setApplicationIDString: string passed is not exactly 4 chars long. (was %ld)", [s length]);
-    }
-    
-    [self setApplicationID:NSHFSTypeCodeFromFileType([NSString stringWithFormat:@"'%@'", s])];
-}
-
-#endif
-
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-implementations"
-
-- (BOOL)columnExists:(NSString*)tableName columnName:(NSString*)columnName __attribute__ ((deprecated)) {
-    return [self columnExists:columnName inTableWithName:tableName];
-}
-
-#pragma clang diagnostic pop
 
 - (BOOL)validateSQL:(NSString*)sql error:(NSError**)error {
     sqlite3_stmt *pStmt = NULL;
