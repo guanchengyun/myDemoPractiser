@@ -13,4 +13,11 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+#import"MBProgressHUD.h"
+#import"KeyName.h"
+#import"HttpRequstUrl.h"
+#import"AFClient.h"
+#import"RainbowColor.h"
+#import "UIColor+Expanded.h"
+#define IS_IOS_7 ([[[[[UIDevice currentDevice] systemVersion] componentsSeparatedByString:@"."] objectAtIndex:0] intValue]>=7)
 #endif
